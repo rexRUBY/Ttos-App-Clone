@@ -9,6 +9,7 @@ import '../../../../common/widget/w_bank_account.dart';
 import '../../../../common/widget/w_big_button.dart';
 import '../../../dialog/d_color_bottom.dart';
 import '../../../dialog/d_confirm.dart';
+import '../../s_main.dart';
 
 class HomeFragment extends StatelessWidget {
   const HomeFragment({
@@ -27,11 +28,12 @@ class HomeFragment extends StatelessWidget {
                 await sleepAsync(500.milliseconds);
               },
               child: SingleChildScrollView(
-                padding: const EdgeInsets.only(top: 60),
+                padding: const EdgeInsets.only(top: TtossAppBar.appbarHeight, bottom: MainScreenState.bottomNavigatorHeight),
                 child: Column(
                   children: [
                     height10,
                     BigButton("토스뱅크", onTap: () {
+                      print("누름");
                       context.showSnackbar("토스뱅크를 눌렀어요");
                     }),
                     height10,
