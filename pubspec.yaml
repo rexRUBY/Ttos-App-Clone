@@ -75,8 +75,6 @@ dependencies:
   json_annotation: ^4.8.0
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -107,6 +105,8 @@ flutter:
   assets:
     - assets/json/
     - assets/image/
+    - assets/image/splash/
+    - assets/image/bank/
     - assets/image/icon/
     - assets/image/flag/
     - assets/image/darkmode/
