@@ -1,6 +1,7 @@
 import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/screen/notification/s_notification,dart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class TtossAppBar extends StatefulWidget {
   static const double appbarHeight = 60;
@@ -50,7 +51,8 @@ class _TtossAppBarState extends State<TtossAppBar> {
                       shape: BoxShape.circle, color: Colors.red),
                 ),
               ))
-            ]),
+            ]
+            ).animate(onPlay: (controller) => controller.repeat()).shake(duration: 2000.milliseconds, hz: 4),
           )
         ],
       ),

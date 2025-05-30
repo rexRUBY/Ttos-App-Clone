@@ -26,7 +26,7 @@ class BankAccountWidget extends StatelessWidget {
                   .white
                   .size(12)
                   .make(),
-              ("${account.balance}원").text.white.bold.size(18).make(),
+              ("${account.balance.toComma()}원").text.white.bold.size(18).make(),
             ],
           ).pSymmetric(h: 20, v: 10),
         ),

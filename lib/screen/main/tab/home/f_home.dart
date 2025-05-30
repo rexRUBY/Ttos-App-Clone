@@ -2,8 +2,9 @@ import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/common/widget/w_rounded_container.dart';
 import 'package:fast_app_base/screen/dialog/d_message.dart';
 import 'package:fast_app_base/screen/main/tab/home/vo/bank_account_dummy.dart';
-import 'package:fast_app_base/screen/main/tab/home/vo/w_toss_app_bar.dart';
+import 'package:fast_app_base/screen/main/tab/home/vo/w_ttoss_app_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import '../../../../common/widget/w_bank_account.dart';
 import '../../../../common/widget/w_big_button.dart';
@@ -47,7 +48,7 @@ class HomeFragment extends StatelessWidget {
                     ))
                   ],
                 ).pSymmetric(h: 20),
-              ),
+              ).animate().slideY(duration: 1000.milliseconds).fadeIn(),
             ),
             const TtossAppBar()
           ],
