@@ -1,6 +1,6 @@
 import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/screen/main/tab/stock/search/s_search_stock.dart';
-import 'package:fast_app_base/screen/main/tab/stock/setting/w_setting.dart';
+import 'package:fast_app_base/screen/main/tab/stock/setting/s_setting.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tab/f_my_stock.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tab/f_todays_discovery.dart';
 import 'package:flutter/material.dart';
