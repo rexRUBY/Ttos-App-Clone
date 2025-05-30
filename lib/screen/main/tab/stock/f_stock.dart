@@ -1,4 +1,6 @@
 import 'package:fast_app_base/common/common.dart';
+import 'package:fast_app_base/screen/main/tab/stock/search/s_search_stock.dart';
+import 'package:fast_app_base/screen/main/tab/stock/setting/w_setting.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tab/f_my_stock.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tab/f_todays_discovery.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +28,7 @@ class _StockFragmentState extends State<StockFragment> with SingleTickerProvider
           actions: [
             ImageButton(
               imagePath: '$basePath/icon/stock_search.png',
-              onTap: () => context.showSnackbar("검색"),
+              onTap: () => Nav.push(const SearchStockScreen()),
             ),
             ImageButton(
               imagePath: '$basePath/icon/stock_calendar.png',
@@ -34,7 +36,9 @@ class _StockFragmentState extends State<StockFragment> with SingleTickerProvider
             ),
             ImageButton(
               imagePath: '$basePath/icon/stock_settings.png',
-              onTap: () => context.showSnackbar("설정"),
+              onTap: () {
+                Nav.push(const SettingScreen());
+              },
             ),
           ],
         ),
@@ -83,7 +87,6 @@ class _StockFragmentState extends State<StockFragment> with SingleTickerProvider
         '오늘의 발견'.text.color(Colors.white).makeCentered().box.width(200).make()
       ],),
       const Line(),
-
     ],
     ),
   );

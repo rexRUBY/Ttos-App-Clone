@@ -1,5 +1,12 @@
 class SimpleStock {
-  final String stockName;
+  final String name;
 
-  SimpleStock(this.stockName);
+  SimpleStock(this.name);
+
+  factory SimpleStock.fromJson(dynamic json) {
+    return SimpleStock(json["name"]);
+  }
+
+  @override
+  String toString() => name;
 }

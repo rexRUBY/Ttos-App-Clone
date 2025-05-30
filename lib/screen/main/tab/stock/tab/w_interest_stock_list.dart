@@ -15,12 +15,14 @@ class _InterestStockListState extends State<InterestStockList> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       color: context.backgroundColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           height20,
           ...myInterestStocks.map((e) => StockItem(e)).toList(),
+          const SizedBox(height: 100),
         ],
       ),
     );

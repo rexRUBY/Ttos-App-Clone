@@ -4,6 +4,12 @@ import '../../../../../common/common.dart';
 
 List<Stock> get myInterestStocks => [
   Stock(
+    stockName: '한화솔루션',
+    stockImagePath: '$basePath/stock/interest_stock_01.png',
+    currentPrice: 41600,
+    yesterdayClosePrice: 41600,
+  ),
+  Stock(
     stockName: '현대모비스',
     stockImagePath: '$basePath/stock/interest_stock_02.png',
     currentPrice: 219000,
